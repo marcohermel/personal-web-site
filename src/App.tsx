@@ -3,16 +3,18 @@ import './App.css'
 import { useWindowSize } from './useWindowSize';
 import { MOBILE_LIMIT_WIDTH } from './constants';
 
+import { PageMobile } from './pages/page.mobile';
+
 function App() {
   const size = useWindowSize();
 
 
   if (size?.width <= MOBILE_LIMIT_WIDTH) {
-    return <h1 className="text-3xl font-bold text-secondary ">test mobile</h1>
+    return <PageMobile />
   }
 
 
-  return (<h1 className="text-3xl font-bold text-secondary"> test desktop </h1>)
+  return <PageMobile />
 }
 
 export default App
