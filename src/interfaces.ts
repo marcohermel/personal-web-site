@@ -3,4 +3,5 @@ export interface IExperienceItemProps {
     monthYear: string;
     image: string;
     url: string;
+    size?: number;
 }

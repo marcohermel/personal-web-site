@@ -1,7 +1,7 @@
 import React from 'react'
-import { IExperienceItemProps } from '../../pages/experience/experience.interface'
+import { IExperienceItemProps } from '../../interfaces'
 
-export const ExperienceItem: React.FC<IExperienceItemProps> = ({ companyName, monthYear, image, url }) => {
+export const ExperienceItem: React.FC<IExperienceItemProps> = ({ companyName, monthYear, image, url, size = 100 }) => {
     return (
         <a href={url} target='blank'>
             <div className='flex flex-col mb-4 items-center'>
@@ -9,8 +9,8 @@ export const ExperienceItem: React.FC<IExperienceItemProps> = ({ companyName, mo
                     <img src={image}
                         alt={companyName}
                         className='rounded-full border-4 border-secondary'
-                        height="100"
-                        width="100"
+                        height={size}
+                        width={size}
                     />
                 </div>
                 <div className='text-primary'>{companyName}</div>

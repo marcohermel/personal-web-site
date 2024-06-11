@@ -1,15 +1,14 @@
 import React from 'react'
-import { PageTitle } from '../../components/mobile/page-title'
-import { ExperienceItem } from '../../components/mobile/experience-item'
-
-import { IExperienceItemProps } from './experience.interface'
-import { experiences } from './experience.constants'
+import { PageTitle } from '../../../components/mobile/page-title'
+import { ExperienceItem } from '../../../components/mobile/experience-item'
+import { experiences } from '../../../constants'
+import { IExperienceItemProps } from '../../../interfaces'
 
 export const Experience: React.FC = () => {
     return (
         <section id='experience' className='flex flex-col items-center'>
             <PageTitle title='WORK EXPERIENCE' />
-            <div className='flex mt-4 flex-col-reverse items-center'>
+            <div className='flex my-60 flex-row-reverse gap-24 items-center'>
                 {experiences.map((exp: IExperienceItemProps) =>
                     <ExperienceItem
                         key={exp.companyName}
@@ -17,6 +16,7 @@ export const Experience: React.FC = () => {
                         monthYear={exp.monthYear}
                         image={exp.image}
                         url={exp.url}
+                        size={150}
                     />
                 )}
             </div>

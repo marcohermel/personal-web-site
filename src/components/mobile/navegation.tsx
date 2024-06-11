@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { COLOR } from '../../constants';
 import { useOutside } from '../../hooks/useOutsideClick';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -24,7 +25,6 @@ export const Navegation: React.FC = () => {
         setShowMenu(false);
     }
 
-
     return (
         <div className='z-40'>
             <div className='flex justify-end bg-tertiary'>
@@ -42,7 +42,7 @@ export const Navegation: React.FC = () => {
                         <span className='py-2' onClick={e => onClick(e, 'about')}>ABOUT</span>
                     </li>
                     <li className='flex justify-center align-middle hover:bg-secondary hover:text-white'>
-                        <span className='py-2' onClick={e => onClick(e, 'experience')}>EXPERIENCE</span>
+                        <span className='py-2' onClick={e => onClick(e, 'experience')}>WORK EXPERIENCE</span>
                     </li>
                     <li className='flex justify-center align-middle hover:bg-secondary hover:text-white'>
                         <span className='py-2' onClick={e => onClick(e, 'contact')}>CONTACT</span>

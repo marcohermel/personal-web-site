@@ -1,37 +1,38 @@
 import React from 'react'
-import { PageTitle } from '../../components/mobile/page-title'
-import linkedinIcon from '../../assets/icons/linkedin.svg'
-import instagramIcon from '../../assets/icons/instagram.svg'
-import githubIncon from '../../assets/icons/github.svg'
-import gmailIcon from '../../assets/icons/gmail.svg'
+import { PageTitle } from '../../../components/mobile/page-title'
+import linkedinIcon from '../../../assets/icons/linkedin.svg'
+import instagramIcon from '../../../assets/icons/instagram.svg'
+import githubIncon from '../../../assets/icons/github.svg'
+import gmailIcon from '../../../assets/icons/gmail.svg'
+import { CONTACTS } from '../../../constants'
 
 export const ContactPage: React.FC = () => {
 
     return (
         <section id='contact' className='flex mt-2 flex-col'>
             <PageTitle title='CONTACT' />
-            <div className='flex m-8 flex-col text-primary'>
-                <a href='https://www.linkedin.com/in/marco-hermel-90994424/' target='blank'>
+            <div className='flex my-80 gap-16 w-full justify-center text-primary'>
+                <a href={CONTACTS.linkedIn.link} target='blank'>
                     <div className='py-4 flex items-center'>
                         <img src={linkedinIcon} width='40' className='mr-2' />
-                        <span>marco-hermel</span>
+                        <span>{CONTACTS.linkedIn.text}</span>
                     </div>
                 </a>
-                <a href='https://www.instagram.com/marcofelipeh/' target='blank'>
+                <a href={CONTACTS.instagram.link} target='blank'>
                     <div className='py-4 flex items-center'>
                         <img src={instagramIcon} width='40' className='mr-2' />
-                        <span>@marcofelipeh</span>
+                        <span>{CONTACTS.instagram.text}</span>
                     </div>
                 </a>
-                <a href='https://github.com/marcohermel/' target='blank'>
+                <a href={CONTACTS.github.link} target='blank'>
                     <div className='py-4 flex items-center' >
                         <img src={githubIncon} width='40' className='mr-2' />
-                        <span>https://github.com/marcohermel/</span>
+                        <span>{CONTACTS.github.text}</span>
                     </div>
                 </a>
                 <div className='py-4 flex items-center'>
                     <img src={gmailIcon} width='40' className='mr-2' />
-                    <span>mf.hermel@gmail.com</span>
+                    <span>{CONTACTS.email.text}</span>
                 </div>
             </div>
         </section>
