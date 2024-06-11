@@ -9,7 +9,7 @@ export const Experience: React.FC = () => {
     return (
         <section id='experience' className='flex flex-col items-center'>
             <PageTitle title='WORK EXPERIENCE' />
-            <div className='flex mt-4 flex-col items-center'>
+            <div className='flex mt-4 flex-col-reverse items-center'>
                 {experiences.map((exp: IExperienceItemProps) =>
                     <ExperienceItem
                         key={exp.companyName}
