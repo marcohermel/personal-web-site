@@ -7,11 +7,11 @@ import acLogo from './assets/images/companies-logos/avenue-code-logo.jpg'
 
 export const MOBILE_LIMIT_WIDTH = 1024;
 
-export const ABOUT_ME = "Hello world! I'm Marco Hermel, a seasoned software developer with a flair for fun and a passion for clean code. With a decade of experience under my belt, I've honed my skills as a full-stack maestro in .NET for 7 years, while also weaving magic on the frontend with React for 4 years. Agile methodologies, especially Scrum, are my secret sauce for project success, as I thrive in collaborative environments where knowledge exchange is key. When I'm not coding, you'll find me exploring the world, hitting the open road, or kicking it on the soccer field. Let's embark on an epic coding adventure together – join me and let's create something extraordinary!"
+export const ABOUT_ME = "I'm Marco Hermel, a seasoned software developer with a flair for fun and a passion for clean code. With a decade of experience under my belt, I've honed my skills as a full-stack in .NET for 5 years, while also weaving magic on the frontend with React for 5 years. Agile methodologies, especially Scrum, are my secret sauce for project success, as I thrive in collaborative environments where knowledge exchange is key. When I'm not coding, you'll find me exploring the world, hitting the open road, or kicking it on the soccer field. Let's embark on an epic coding adventure together – join me and let's create something extraordinary!"
 
 
 export const CONTACTS = {
-    linkedIn: { text: 'marco-hermel', link: 'https://www.linkedin.com/in/marco-hermel-90994424/' },
+    linkedIn: { text: 'marco-hermel', link: 'https://www.linkedin.com/in/marco-hermel/' },
     instagram: { text: '@marco_dev', link: 'https://www.instagram.com/marco_dev/' },
     github: { text: 'https://github.com/marcohermel/', link: 'https://github.com/marcohermel/' },
     email: { text: 'mf.hermel@gmail.com', link: '' },
