@@ -1,7 +1,6 @@
 import React from 'react'
 import { PageTitle } from '../../../components/mobile/page-title'
 import linkedinIcon from '../../../assets/icons/linkedin.svg'
-import instagramIcon from '../../../assets/icons/instagram.svg'
 import githubIncon from '../../../assets/icons/github.svg'
 import gmailIcon from '../../../assets/icons/gmail.svg'
 import { CONTACTS } from '../../../constants'
@@ -16,12 +15,6 @@ export const ContactPage: React.FC = () => {
                     <div className='py-4 flex items-center'>
                         <img src={linkedinIcon} width='40' className='mr-2' />
                         <span>{CONTACTS.linkedIn.text}</span>
-                    </div>
-                </a>
-                <a href={CONTACTS.instagram.link} target='blank'>
-                    <div className='py-4 flex items-center'>
-                        <img src={instagramIcon} width='40' className='mr-2' />
-                        <span>{CONTACTS.instagram.text}</span>
                     </div>
                 </a>
                 <a href={CONTACTS.github.link} target='blank'>
